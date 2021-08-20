@@ -1,0 +1,25 @@
+{
+    "getList": [
+      {
+        "id": 1,
+        "title": "test get request",
+        "author": "menndy"
+      },
+      {
+        "id": 2,
+        "title": "test get request1",
+        "author": "menndy1"
+      }
+    ],
+    "getDetails": {},
+    "login": [
+      {
+        "username": "menndy",
+        "currentPage": 123456,
+        "id": 1
+      },
+      {
+        "id": 2
+      }
+    ]
+  }

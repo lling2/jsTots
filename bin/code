@@ -1,0 +1,19 @@
+#!/usr/bin/env node
+const { program } = require('commander');
+const figlet = require('figlet');
+const Printer = require('@darkobits/lolcatjs');
+const { version } = require('../package.json');
+const apicode = require('../scripts/apicode');
+
+const versionStr = figlet.textSync('Vision Code');
+
+program.version(
+  Printer.fromString(
+    `   \n   前端代码生成器${version}\n ${versionStr}`,
+  ),
+);
+
+// 接口生成代码部分
+apicode(program);
+
+program.parse(process.argv);

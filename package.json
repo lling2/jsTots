@@ -1,0 +1,33 @@
+{
+  "name": "vision-code",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "bin": {
+    "vision-code": "bin/code"
+  },
+  "scripts": {
+    "mock": "json-server --watch ./mocks/api.json -p 8076",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@babel/preset-env": "^7.15.0",
+    "@darkobits/lolcatjs": "^3.1.5",
+    "axios": "^0.21.1",
+    "commander": "^8.1.0",
+    "cosmiconfig": "^7.0.0",
+    "figlet": "^1.5.2",
+    "https-proxy-agent": "^5.0.0",
+    "inquirer": "^8.1.2",
+    "jest": "^27.0.6",
+    "json-server": "^0.16.3",
+    "path": "^0.12.7",
+    "promise-fs": "^2.1.1",
+    "quicktype-core": "^6.0.70",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^12.0.0"
+  }
+}
