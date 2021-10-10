@@ -1,5 +1,6 @@
 const { resolve } = require('path');
 const inquirer = require('inquirer');
+// 
 const generateInterface = require('../lib/apicode/generateInterface');
 // const generateCRUD = require('../lib/apicode/generateCRUD');
 const loadConfig = require('../lib/loadConfig');

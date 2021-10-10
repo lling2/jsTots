@@ -24,6 +24,7 @@
     "path": "^0.12.7",
     "promise-fs": "^2.1.1",
     "quicktype-core": "^6.0.70",
+    "shelljs": "^0.8.4",
     "test": "jest"
   },
   "devDependencies": {

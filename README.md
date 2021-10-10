@@ -13,7 +13,9 @@ vision-code --help
 #接口生成TS代码帮助文档
 vision-code api2code --help
 
-#详细命令
+## api2code
+描述：通过自定义结构或openAPI的json生成crud代码 缩写：a2c
+
 ```shell
 #查看版本号
 vision-code -V
@@ -31,6 +33,12 @@ Options:
 ```
 
 #举例
-```bash
-vision-code apicode -o src/index.ts -i mocks/api.json
-```
+1. 通过本地 json 方式生成 interface
+   ```bash
+   vision-code apicode -o src/index.ts -i mocks/api.json
+   ```
+2. 通过自定义json或openAPI生成 crud代码
+    ```bash
+    vision-code apicode -i ./mocks/apiConfig.json -o src/aaa.ts
+    ```
+    > 示例json在项目目录`mocks/apiConfig.json`中。

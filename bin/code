@@ -4,6 +4,7 @@ const figlet = require('figlet');
 const Printer = require('@darkobits/lolcatjs');
 const { version } = require('../package.json');
 const apicode = require('../scripts/apicode');
+const envircode = require('../scripts/envircode');
 
 const versionStr = figlet.textSync('Vision Code');
 
@@ -15,5 +16,7 @@ program.version(
 
 // 接口生成代码部分
 apicode(program);
+// 生成运行环境代码部分
+envircode(program);
 
 program.parse(process.argv);
